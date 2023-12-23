@@ -2,11 +2,12 @@
 
 int main(){
     int r,c;
-    int n[c][r];
     std::cout << "Enter the number of rows: ";
     std::cin >> r;
     std::cout << "Enter the number of columns: ";
     std::cin >> c;
+    int n[r][c];
+
     int l=1;
     for(int i=0;i<r;i++){
         for(int j=0;j<c;j++){
