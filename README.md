@@ -1,3 +1,3 @@
 # MY cpp learning journey
 
-this is just a test
+23-12 i revised loops and recursion, now moving to arrays
