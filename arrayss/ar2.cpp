@@ -10,7 +10,8 @@ int main(){
         }
         std::cout << std::endl;
     }
-    int k=n[0][0];
+    std::cout << *p <<std::endl;
+    int k=*p;
     for (int i=1;i<9;i++){
         if (k<*(p+i)){
             k=*(p+i);
