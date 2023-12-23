@@ -10,4 +10,11 @@ int main(){
         }
         std::cout << std::endl;
     }
+    int k=n[0][0];
+    for (int i=1;i<9;i++){
+        if (k>*(p+i)){
+            k=*(p+i);
+        }
+    }
+    std::cout << "Smallest element: " << k << std::endl;
 }
