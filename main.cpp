@@ -1,24 +1,14 @@
 #include <iostream>
-
+using namespace std;
 int main() {
-    int num1, num2;
+    int num1, num2, sum;
     float average;
 
-    std::cout << "Enter the first number: ";
-    std::cin >> num1;
-
-    std::cout << "Enter the second number: ";
-    std::cin >> num2;
-
+    cout << "Enter the numbers: ";
+    cin >> num1 >> num2;
+    sum = num1 + num2;
     average = (num1 + num2) / 2.0;
-
-    std::cout << "The average is: " << average << std::endl;
-
+    cout << "The average is: " << average << "\n" << "The sum is: " << sum << "\n";
+    
     return 0;
-}
-function run_and_push() {
-    $@
-    git add -A
-    git commit --allow-empty-message -m ''
-    git push
 }
