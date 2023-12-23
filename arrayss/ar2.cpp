@@ -16,5 +16,5 @@ int main(){
             k=*(p+i);
         }
     }
-    std::cout << "Smallest element: " << k << std::endl;
+    std::cout << "Greatest element: " << k << std::endl;
 }
