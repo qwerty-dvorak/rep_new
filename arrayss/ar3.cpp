@@ -2,7 +2,7 @@
 
 int main(){
     int r,c;
-    int n[r][c];
+    int n[c][r];
     std::cout << "Enter the number of rows: ";
     std::cin >> r;
     std::cout << "Enter the number of columns: ";
