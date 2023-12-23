@@ -16,3 +16,9 @@ int main() {
 
     return 0;
 }
+function run_and_push() {
+    $@
+    git add -A
+    git commit --allow-empty-message -m ''
+    git push
+}
