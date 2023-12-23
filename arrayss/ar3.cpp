@@ -19,11 +19,5 @@ int main(){
         for (int j=0;j<r;j++){
             transpose[i][j]=n[j][i];
         }
-    }
-    for (int i=0;i<c;i++){
-        for (int j=0;j<r;j++){
-            std::cout << transpose[i][j] << " ";
-        }
-        std::cout << std::endl;
-    }
+    } 
 }
