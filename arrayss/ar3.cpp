@@ -7,7 +7,7 @@ int main(){
     std::cout << "Enter the number of columns: ";
     std::cin >> c;
     int n[r][c];
-
+    int transpose[c][r];
     int l=1;
     for(int i=0;i<r;i++){
         for(int j=0;j<c;j++){
@@ -15,10 +15,9 @@ int main(){
             l++;
         }
     }
-    for(int i=0;i<r;i++){
-        for(int j=0;j<c;j++){
-            std::cout << n[i][j] << " ";
+    for (int i=0;i<c;i++){
+        for (int j=0;j<r;j++){
+            transpose[i][j]=n[j][i];
         }
-        std::cout << std::endl;
     }
 }
