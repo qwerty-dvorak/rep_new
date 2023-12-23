@@ -24,7 +24,7 @@ void printPrimes(int n) {
     std::cout << "Prime numbers from 1 to " << n << " are: ";
     for (int i = 2; i <= n; i++) {
         if (isPrime[i]) {
-            std::cout << i << " ";
+            //std::cout << i << " ";
         }
     }
     std::cout << std::endl;
