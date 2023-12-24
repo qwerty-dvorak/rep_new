@@ -11,9 +11,9 @@ int main(){
         u++;
         while (r!=0){
             u++;
-            i=n;
-            n=r;
-            r=i%n;
+            i=k;
+            k=r;
+            r=i%k;
         }
         c+=u;
         std::cout << u << std::endl;
