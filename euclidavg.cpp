@@ -6,16 +6,17 @@ int main(){
     int c=0;
     for (int t=1;t<=k;t++){
         int i=t;
-        c++;
+        int u=0;
         int r=n%i;
-        c++;
+        u++;
         while (r!=0){
-            c++;
+            u++;
             n=i;
             i=r;
             r=n%i;
         }
-        std::cout << c << std::endl;
+        c+=u;
+        std::cout << u << std::endl;
     }
     return 0;
 }
