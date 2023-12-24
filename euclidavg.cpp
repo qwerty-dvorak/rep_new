@@ -7,13 +7,13 @@ int main(){
     for (int t=1+k;t<=2*k;t++){ 
         int i=t;
         int u=0;
-        int r=n%i;
+        int r=i%n;
         u++;
         while (r!=0){
             u++;
-            n=i;
-            i=r;
-            r=n%i;
+            i=n;
+            n=r;
+            r=i%n;
         }
         c+=u;
         std::cout << u << std::endl;
