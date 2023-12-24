@@ -7,7 +7,7 @@ int main(){
     for (int t=1+k;t<=2*k;t++){ 
         int i=t;
         int u=0;
-        int r=i%n;
+        int r=i%k;
         u++;
         while (r!=0){
             u++;
