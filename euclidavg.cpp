@@ -13,7 +13,8 @@ int main(){
             n=i;
             i=r;
             r=n%i;
-        } 
+        }
+        std::cout << c << std::endl;
     }
     std::cout << c << std::endl;
 }
