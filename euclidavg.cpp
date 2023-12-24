@@ -7,9 +7,9 @@ int main(){
         int r=n%i;
         while (r!=0){
             c++;
-            r=n%i;
             n=i;
             i=r;
+            r=n%i;
         } 
     }
     std::cout << c << std::endl;
