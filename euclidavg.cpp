@@ -7,6 +7,7 @@ int main(){
     for (int t=1;t<=k;t++){
         int i=t;
         int r=n%i;
+        c++;
         while (r!=0){
             c++;
             n=i;
