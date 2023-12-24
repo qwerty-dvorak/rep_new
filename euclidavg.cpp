@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main(){
-    int n=8;
+    int n=5;
     int k=n;
     int c=0;
     for (int t=1;t<=k;t++){
