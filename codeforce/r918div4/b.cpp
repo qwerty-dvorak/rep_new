@@ -10,38 +10,27 @@ For each test case, output the letter that was replaced.
 */
 
 #include <iostream>
-
 int main() {
     int t;
     std::cin >> t;
 
     while (t--) {
-        char a[3][3];
-        for (int i = 0; i < 3; i++) {
-            std::cin >> a[i][0] >> a[i][1] >> a[i][2];
-            if (a[i][0] == a[i][1]) {
-                if (a[i][2] == a[i][0])
-                    std::cout << a[i][0] << "\n";
-                else
-                    std::cout << a[i][2] << "\n";
-            } else if (a[i][0] == a[i][2]) {
-                std::cout << a[i][1] << "\n";
-            } else {
-                std::cout << a[i][0] << "\n";
+        char a[3];
+        int f=0;
+        while  (f==0)
+        {
+            std::cin >> a[0] >> a[1] >> a[2];
+            for (int i=0; i<3; i++) 
+            {
+                if (a[i]!="A") 
+                {
+                    std::cout << a[i] << "\n";
+                    f=1;
+                }
+                else break;
+                
             }
         }
-
-        if (a[0][0] == a[1][0]) {
-            if (a[2][0] == a[0][0])
-                std::cout << a[0][0] << "\n";
-            else
-                std::cout << a[2][0] << "\n";
-        } else if (a[0][0] == a[2][0]) {
-            std::cout << a[1][0] << "\n";
-        } else {
-            std::cout << a[0][0] << "\n";
-        }
     }
-
     return 0;
 }
