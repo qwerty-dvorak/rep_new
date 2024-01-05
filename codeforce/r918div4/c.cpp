@@ -27,7 +27,7 @@ int main() {
             std::cin >> a[i];
             sum+=a[i];
         }
-        if (isPerfectSquare(n)) {
+        if (isPerfectSquare(sum)) {
             std::cout << "YES\n";
         } else {
             std::cout << "NO\n";
