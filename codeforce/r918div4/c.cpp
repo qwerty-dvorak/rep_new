@@ -10,8 +10,8 @@ Output For each test case, output "YES" if Calin can build a square using all of
 #include <iostream>
 #include <cmath>
 
-bool isPerfectSquare(int num) {
-    int root = std::sqrt(num);
+bool isPerfectSquare(long long num) {
+    long long root = std::sqrt(num);
     return root * root == num;
 }
 
@@ -22,7 +22,7 @@ int main() {
         int n;
         std::cin >> n;
         int a[n];
-        int sum=0;
+        long long sum=0;
         for (int i=0; i<n; i++) {
             std::cin >> a[i];
             sum+=a[i];
