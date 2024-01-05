@@ -32,4 +32,5 @@ int main() {
         } else {
             std::cout << "NO\n";
         }
+    }
 }
