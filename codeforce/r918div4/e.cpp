@@ -14,7 +14,8 @@ int main() {
         for (int i=0; i<n-1; i++) {
             if (a[i]<a[i+1]) count++;
         }
-        std::cout << count << "\n";
+        count=count/2+1;
+        std::cout << (count % 2) << "\n";
     }
     return 0;
 }
