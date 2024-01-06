@@ -19,7 +19,7 @@ int main() {
         for (int i=0; i<n; i++) {
             std::cin >> a[i];   
         }
-        for (int i=0; i<n-1; i++) {
+        for (int i=0; i<n-2; i++) {
             if (a[i]=='b' || a[i]=='c' || a[i]=='d') 
             {
                 if (a[i+1]=='b' || a[i+1]=='c' || a[i+1]=='d') 
@@ -28,7 +28,10 @@ int main() {
                 }
                 else std::cout << a[i];
             } 
-            else std::cout << a[i];
+            else 
+            {
+                if ((a[i+1]=='a' || a[i+1]=='b') && (a[i+2]=='a' || a[i+2]=='e')) std::cout << a[i];
+                else std::cout << a[i] << ".";
         }
         std::cout << "\n";
     }
