@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cstdlib>
 int main() {
     int t;
     std::cin >> t;
@@ -10,12 +10,11 @@ int main() {
         for (int i=0; i<n; i++) {
             std::cin >> a[i];
         }
-        int count=0;
-        for (int i=0; i<n-1; i++) {
-            if (a[i]<a[i+1]) count++;
+        int sum=0;
+        for (int i=0; i<n; i++) {
+            sum+=a[i];
         }
-        count=count/2+1;
-        std::cout << (count % 2) << "\n";
+        std::cout << fabs(a) << "\n";
     }
     return 0;
 }
