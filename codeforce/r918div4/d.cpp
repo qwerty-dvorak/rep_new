@@ -14,29 +14,14 @@ int main() {
     std::cin >> t;
     while (t--) {
         int n;
-        std::cin >> n;
-        char a[n];
-        for (int i=0; i<n; i++) {
-            std::cin >> a[i];   
-        }
-        for (int i=0; i<n-2; i++) {
-            if (a[i]=='b' || a[i]=='c' || a[i]=='d') 
-            {
-                if (a[i+1]=='b' || a[i+1]=='c' || a[i+1]=='d') 
-                {
-                    std::cout << a[i] << ".";
-                }
-                else std::cout << a[i];
-            } 
-            else 
-            {
-                if ((a[i+1]=='b' || a[i+1]=='c' || a[i+1]=='d') && ((a[i+2]=='b' || a[i+2]=='c' || a[i+2]=='d')))
-                    std::cout << a[i];
-                else std::cout << a[i] << ".";
-            }
-        }
-        std::cout << a[n-2] << a[n-1];
-        std::cout << "\n";
+          std::string s;
+          std::cin>>n>>s;
+          std::cout<<s[0];
+          for(int i=1;i<n;i++){
+            if(s[i+1]=='a'||s[i+1]=='e') std::cout<<".";
+            std::cout<<s[i];
+          }
+          std::cout<<"\n";
     }
     return 0;
 }

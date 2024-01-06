@@ -1,43 +1,35 @@
-#include <iostream>
-#include <cstdlib>
-int main() {
-    int t;
-    std::cin >> t;
-    while (t--) {
-        int n;
-        std::cin >> n;
-        char l[n];
-        for (int i=0; i<n; i++) {
-            std::cin >> l[i];
-        }
-        int a[n];
-        for (int i=0; i<n; i++) {
-            if (l[i]=='-') a[i]=-1;
-            else a[i]=1;
-        }
-        int sum=0;
-        for (int i=0; i<n; i++) {
-            sum+=a[i];
-        }
-        int asum=std::abs(sum);
-        std::cout << asum << "\n";
-    }
-    return 0;
-}
-
-
-
-/*
-#include <iostream>
+#include <bits/stdc++.h>
+using namespace std; 
 int main(){
     int t;
-    long a,b;
-    std::cin >> t;
-    while (t--) {
-        std::cin >> a >> b;
-        if ((a+b)%2==0) std::cout << "Bob" << "\n";
-        else std::cout << "Alice" << "\n";
+    cin >> t;
+    while(t--){
+        int n;
+        long long s=0;
+        cin >> n; 
+        long long glass[n];
+        bool flag=false;
+        int k;
+        for(int i=0; i<n; i++){
+            cin >> k;
+            if(i%2==0){
+                s+=k;
+            }else{
+                s-=k;
+            }
+            glass[i]=s;
+        }
+        sort(glass, glass+n);
+        for(int a=0; a<n-1; a++){
+            if (glass[a]==glass[a+1] || glass[a]==0){
+                flag=true;
+                break;
+            }
+        }
+        if(flag==true){
+            cout << "YES\n";
+        }else{
+            cout << "NO\n";
+        }
     }
 }
-
-*/
