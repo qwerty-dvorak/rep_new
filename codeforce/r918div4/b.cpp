@@ -27,7 +27,6 @@ int main() {
                     f=1;
                 }
                 else break;
-                if a[]
                 
             }
         }
