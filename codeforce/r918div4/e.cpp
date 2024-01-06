@@ -6,9 +6,14 @@ int main() {
     while (t--) {
         int n;
         std::cin >> n;
-        int a[n];
+        char l[n];
         for (int i=0; i<n; i++) {
-            std::cin >> a[i];
+            std::cin >> l[i];
+        }
+        int a[n]
+        for (int i=0; i<n; i++) {
+            if (l[i]=='-') a[i]=-1;
+            else a[i]=1;
         }
         int sum=0;
         for (int i=0; i<n; i++) {
