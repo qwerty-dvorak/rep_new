@@ -21,13 +21,7 @@ int main() {
     while (t--) {
         int a, b, c;
         std::cin >> a >> b >> c;
-
-        if (a == b)
-            std::cout << c << "\n";
-        else if (b == c)
-            std::cout << a << "\n";
-        else
-            std::cout << b << "\n";
+        std::cout << (a ^ b ^ c) << '\n';
     }
 
     return 0;
