@@ -19,7 +19,7 @@ int main() {
         for (int i=0; i<n; i++) {
             std::cin >> a[i];   
         }
-        for (int i=0; i<n; i++) {
+        for (int i=0; i<n-1; i++) {
             if (a[i]=='a' || a[i]=='e') 
             {
                 if (a[i+1]=='a' || a[i+1]=='e') {
