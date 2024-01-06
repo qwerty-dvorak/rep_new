@@ -14,7 +14,8 @@ int main() {
         for (int i=0; i<n; i++) {
             sum+=a[i];
         }
-        std::cout << fabs(a) << "\n";
+        int asum=std::abs(sum);
+        std::cout << asum << "\n";
     }
     return 0;
 }
