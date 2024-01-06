@@ -10,7 +10,7 @@ int main() {
         for (int i=0; i<n; i++) {
             std::cin >> l[i];
         }
-        int a[n]
+        int a[n];
         for (int i=0; i<n; i++) {
             if (l[i]=='-') a[i]=-1;
             else a[i]=1;
