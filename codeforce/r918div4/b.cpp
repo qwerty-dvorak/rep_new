@@ -31,7 +31,10 @@ int main() {
             {
                 t=t-int(a[0])-int(a[1]);
             }
-            std::cout << char(t) << "\n";
+            if (t==65 || t==66 || t==67)
+            {
+                std::cout << char(t) << "\n";
+            }
         }   
     }
     return 0;
