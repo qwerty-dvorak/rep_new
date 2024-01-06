@@ -14,22 +14,25 @@ int main() {
     int t;
     std::cin >> t;
     while (t--) {
-        char a[3];
-        int t=198; 
-        std::cin >> a[0] >> a[1] >> a[2];
-        if (a[0]=='?')
+        for (int i=0; i<3; i++)
         {
-            t=t-int(a[1])-int(a[2]);
-        }
-        if (a[1]=='?')
-        {
-            t=t-int(a[0])-int(a[2]);
-        }
-        if (a[2]=='?')
-        {
-            t=t-int(a[0])-int(a[1]);
-        }
-        std::cout << char(t) << "\n";
+            char a[3];
+            int t=198; 
+            std::cin >> a[0] >> a[1] >> a[2];
+            if (a[0]=='?')
+            {
+                t=t-int(a[1])-int(a[2]);
+            }
+            if (a[1]=='?')
+            {
+                t=t-int(a[0])-int(a[2]);
+            }
+            if (a[2]=='?')
+            {
+                t=t-int(a[0])-int(a[1]);
+            }
+            std::cout << char(t) << "\n";
+        }   
     }
     return 0;
 }
