@@ -1,11 +1,8 @@
-def generateallpermutaion(t):
-    if len(t)==1:
-        return [t]
+def generateallsubsequences(s):
+    if len(s)==0:
+        return [[]]
     else:
-        l=[]
-        for i in range(len(t)):
-            for j in generateallpermutaion(t[:i]+t[i+1:]):
-                l.append([t[i]]+j)
-        return l
+        t=generateallsubsequences(s[1:])
+        return t+[[s[0]]+i for i in t]
 t=[1,2,3,4]
-print(generateallpermutaion(t))
+print(generateallsubsequences(t))
