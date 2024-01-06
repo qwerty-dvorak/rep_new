@@ -30,7 +30,7 @@ int main() {
             } 
             else 
             {
-                if ((a[i+1]=='a' || a[i+1]=='b') && (a[i+2]=='a' || a[i+2]=='e')) std::cout << a[i];
+                if ((a[i+1]=='a' || a[i+1]=='e') && (a[i+2]=='a' || a[i+2]=='e')) std::cout << a[i];
                 else std::cout << a[i] << ".";
             }
         }
