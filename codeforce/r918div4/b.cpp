@@ -39,3 +39,29 @@ int main() {
     }
     return 0;
 }
+
+
+/*
+alternate using map(dictionary sorta)
+
+#include <iostream>
+int main() {
+    int t;
+    std::cin >> t;
+    while (t--) {
+        map<char, int> m;
+        for(int i = 0; i < 9; i++) {
+            char x;
+            std::cin >> x;
+            if(x != '?')
+                m[x]++;
+        }
+        for(auto i : m) {
+            if(i.second == 2) {
+                std::cout << i.first << endl;
+            }
+        }
+    }
+    return 0;
+}
+*/
