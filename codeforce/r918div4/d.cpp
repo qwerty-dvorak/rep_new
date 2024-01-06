@@ -34,6 +34,7 @@ int main() {
                 else std::cout << a[i] << ".";
             }
         }
+        std::cout << a[n-2] << a[n-1];
         std::cout << "\n";
     }
     return 0;
