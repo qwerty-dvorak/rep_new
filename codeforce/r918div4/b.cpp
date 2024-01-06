@@ -22,13 +22,24 @@ int main() {
             std::cin >> a[0] >> a[1] >> a[2];
             for (int i=0; i<3; i++) 
             {
-                if (a[i]!="A") 
+                if (a[i]=="A") 
                 {
-                    f=1;
+                    f=0;
+                    break
                 }
-                else break;
-                
+                else if (a[i]=="B")
+                {
+                    g=0;
+                    break
+                }
+                else if (a[i]=="C")
+                {
+                    h=0;
+                    break
+                }                
             }
+            if (f==1) std::
+            
         }
     }
     return 0;
