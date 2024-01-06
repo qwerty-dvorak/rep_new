@@ -16,7 +16,7 @@ int main() {
 
     while (t--) {
         char a[3];
-        int f=0;
+        int f=0,g=0,h=0;
         while  (f==0)
         {
             std::cin >> a[0] >> a[1] >> a[2];
@@ -24,10 +24,10 @@ int main() {
             {
                 if (a[i]!="A") 
                 {
-                    std::cout << a[i] << "\n";
                     f=1;
                 }
                 else break;
+                if a[]
                 
             }
         }
