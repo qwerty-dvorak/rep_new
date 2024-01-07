@@ -4,9 +4,9 @@ int main(){
     int t;
     cin >> t;
     while(t--){
-        int n;
+        int n=3;
         long long s=0;
-        cin >> n; 
+        //cin >> n; 
         long long glass[n];
         bool flag=false;
         int k;
