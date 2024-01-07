@@ -10,18 +10,18 @@ For test case, output a string denoting the word split into syllables by inserti
 #include <iostream>
 
 int main() {
-    int t;
-    std::cin >> t;
+    int t=1;
+    //std::cin >> t;
     while (t--) {
         int n;
-          std::string s;
-          std::cin>>n>>s;
-          std::cout<<s[0];
-          for(int i=1;i<n;i++){
-            if(s[i+1]=='a'||s[i+1]=='e') std::cout<<".";
-            std::cout<<s[i];
-          }
-          std::cout<<"\n";
+        std::string s;
+        std::cin>>n>>s;
+        std::cout<<s[0];
+        for(int i=1;i<n;i++){
+          if(s[i+1]=='a'||s[i+1]=='e') std::cout<<".";
+          std::cout<<s[i];
+        }
+        std::cout<<"\n";
     }
     return 0;
 }
