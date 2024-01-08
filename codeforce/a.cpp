@@ -9,10 +9,12 @@ int main(){
         string str[a];
         int alph[26];
         int r=0;
-        for (auto i:str){
-            alph[int(i)-97]++;
-            if (alph[int(i)-97]==(int(i)-97)){
-                r++;
+        for (auto& s : str) {
+            for (char i : s) {
+                alph[int(i) - 97]++;
+                if (alph[int(i) - 97] == (int(i) - 97)) {
+                    r++;
+                }
             }
         }
     }
