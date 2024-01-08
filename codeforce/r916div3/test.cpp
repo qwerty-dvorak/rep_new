@@ -1,11 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-istream& operator>>(istream& in, vector<T>& v) {
-    for (auto& item : v) cin >> item;
-    return in;
-}
-
 void solve() {
     int n;
     cin >> n;
