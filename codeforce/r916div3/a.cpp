@@ -3,9 +3,10 @@ using namespace std;
 int main(){
     int t;
     cin>>t;
-    int r=0;
+    
     while (t--){
         int a;
+        int r=0;
         cin>>a;
         string str;
         cin>>str;        
@@ -19,7 +20,8 @@ int main(){
                 r++;
             }
         }
+        cout<<r<<endl;
     }
-    cout<<r<<endl;
+    
     return 0;
 }
