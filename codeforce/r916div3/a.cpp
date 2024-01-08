@@ -3,13 +3,13 @@ using namespace std;
 int main(){
     int t;
     cin>>t;
+    int r=0;
     while (t--){
         int a;
         cin>>a;
         string str;
         cin>>str;        
         int alph[26];
-        int r=0;
         for (int i=0;i<26;i++){
             alph[i]=0;
         }
