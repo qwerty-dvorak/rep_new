@@ -16,7 +16,7 @@ int main(){
         }
         for (int i=0;i<a;i++){
             alph[str[i]-'A']++;
-            if (alph[str[i]-'A']==str[i]-'A'){
+            if (alph[str[i]-'A']==str[i]-'A'+1){
                 r++;
             }
         }
