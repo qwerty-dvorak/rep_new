@@ -10,7 +10,7 @@ int main(){
         int alph[26];
         int r=0;
         for (auto i:str){
-            alph[int(i)-97]++;
+            alph[(int)i-97]++;
             if (alph[int(i)-97]==(int(i)-97)){
                 r++;
             }
