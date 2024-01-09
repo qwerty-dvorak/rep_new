@@ -9,15 +9,18 @@ int main() {
 		int n;
 		string s;
 		cin >> n >> s;
-		for (int i = 0; i ^ 26; ++i)
+		for (int i = 0; i != 26; ++i)
 			cnt[i] = 0;
 		int ans = 0;
-		for (int i = 0; i ^ n; ++i) {
+		for (int i = 0; i != n; ++i) {
 			++cnt[s[i] - 'A'];
-		}
-		for (int i = 0; i ^ 26; ++i)
-			if (cnt[i] >= i + 1)
+			if (cnt[s[i] - 'A'] == s[i] - 'A' + 1)
 				++ans;
+		}
+		/*
+		for (int i = 0; i != 26; ++i)
+			if (cnt[i] >= i + 1)
+				++ans;*/
 		cout << ans << '\n';
 	}
 }
