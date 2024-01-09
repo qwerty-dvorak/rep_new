@@ -3,7 +3,6 @@ using namespace std;
 int main(){
     int t;
     cin>>t;
-    
     while (t--){
         int a;
         string str;
@@ -21,6 +20,5 @@ int main(){
         }
         cout<<r<<endl;
     }
-    
     return 0;
 }
