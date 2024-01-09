@@ -1,6 +1,8 @@
 #include <iostream>
 #include<bits/stdc++.h>
 using namespace std;
+template<typename X, typename Y> bool ckmin(X& x, const Y& y) { return (y < x) ? (x=y,1):0; }
+template<typename X, typename Y> bool ckmax(X& x, const Y& y) { return (x < y) ? (x=y,1):0; }
 
 void solve(){
       int n; cin >> n;
