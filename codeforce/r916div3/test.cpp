@@ -1,26 +1,23 @@
-#include <bits/stdc++.h>
+#include<iostream>
+
 using namespace std;
-a
-void solve() {
-    int n;
-    cin >> n;
-    string s;
-    cin >> s;
-    int cnt[27];
-    for (char ch : s) {
-        cnt[ch - 'A']++;
-    }
-
-    int ans = 0;
-    for (int i = 0; i < 26; i++) {
-        ans += (cnt[i] >= (i + 1));
-    }
-
-    cout << ans;
-}
-
-signed main() {
-    int t = 1;
-    cin >> t;
-    while (t--) solve(), cout << '\n';
+int cnt[26];
+int main() {
+	int t;
+	cin >> t;
+	while (t--) {
+		int n;
+		string s;
+		cin >> n >> s;
+		for (int i = 0; i ^ 26; ++i)
+			cnt[i] = 0;
+		int ans = 0;
+		for (int i = 0; i ^ n; ++i) {
+			++cnt[s[i] - 'A'];
+		}
+		for (int i = 0; i ^ 26; ++i)
+			if (cnt[i] >= i + 1)
+				++ans;
+		cout << ans << '\n';
+	}
 }
