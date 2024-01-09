@@ -12,6 +12,7 @@ int main(){
         for (int i=n;i!=k;i--){
             std::cout<<i<<" ";
         }
+        std::cout<<std::endl;
     }
     return 0;
 }
