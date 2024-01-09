@@ -17,10 +17,6 @@ int main() {
 			if (cnt[s[i] - 'A'] == s[i] - 'A' + 1)
 				++ans;
 		}
-		/*
-		for (int i = 0; i != 26; ++i)
-			if (cnt[i] >= i + 1)
-				++ans;*/
 		cout << ans << '\n';
 	}
 }

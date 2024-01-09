@@ -6,15 +6,14 @@ int main(){
     
     while (t--){
         int a;
-        int r=0;
-        cin>>a;
         string str;
-        cin>>str;        
+        cin>>a>>str;
+        int r=0;        
         int alph[26];
-        for (int i=0;i<26;i++){
+        for (int i=0;i!=26;i++){
             alph[i]=0;
         }
-        for (int i=0;i<a;i++){
+        for (int i=0;i!=a;i++){
             alph[str[i]-'A']++;
             if (alph[str[i]-'A']==str[i]-'A'+1){
                 r++;
