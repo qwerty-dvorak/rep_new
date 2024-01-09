@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+a
 void solve() {
     int n;
     cin >> n;
