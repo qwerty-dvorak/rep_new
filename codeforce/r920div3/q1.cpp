@@ -9,17 +9,23 @@ int main(){
         std:: cin >> a >> b;
         int c,d;
         std:: cin >> c >> d;
-        if (a!=c && b!=d && a!=d && b!=c){
+        if (a!=c && b!=d){
+            std:: cout << a-b << std:: endl;
+            std:: cout << b-d << std:: endl;
             area = (a-b)*(b-d);
         }
         int e,f;
         std:: cin >> e >> f;
-        if (a!=e && b!=f && a!=f && b!=e){
+        if (a!=e && b!=f){
+            std:: cout << a-b << std:: endl;
+            std:: cout << b-f << std:: endl;
             area = (a-b)*(b-f);
         }
         int g,h;
         std:: cin >> g >> h;
-        if (a!=g && b!=h && a!=h && b!=g){
+        if (a!=g && b!=h){
+            std:: cout << a-b << std:: endl;
+            std:: cout << b-h << std:: endl;
             area = (a-b)*(b-h);
         }
         area=std::abs(area);
