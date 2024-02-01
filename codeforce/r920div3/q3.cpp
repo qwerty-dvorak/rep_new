@@ -31,6 +31,7 @@ int main(){
         else{
             std:: cout << "YES" << std:: endl;
         }
+        n--;
     }
     return 0;
 }
