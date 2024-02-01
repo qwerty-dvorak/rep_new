@@ -8,11 +8,13 @@ int main(){
         std:: cin >> num;
         int arr1[num];
         int arr2[num];
+        std::string s1;
         for (int i=0;i<num;i++){
-            std:: cin >> arr1[i];
+            arr1[i]=s1[i]-'0';
         }
-        for (int i=0;i<num;i++){
-            std:: cin >> arr2[i];
+        std::string s2;
+        for(int i=0;i<num;i++){
+            arr2[i]=s2[i]-'0';
         }
         int a1=0,a2=0;
         int sum=0;
