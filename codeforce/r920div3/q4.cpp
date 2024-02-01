@@ -17,7 +17,7 @@ int main(){
     std::cin >> k;
     while(k!=0){
         int n,m;
-        int sum;
+        int sum=0;
         std::cin >> n >> m;
         int a[n];
         int b[m];
