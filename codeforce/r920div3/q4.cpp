@@ -12,7 +12,7 @@ void sortarray(int *a, int n){
     }
 }
 
-void alternateSort(int *a, int *b, int n){
+void alternatesort(int *a, int *b, int n){
     int i=0;
     int j=n-1;
     int t=0;
@@ -21,6 +21,23 @@ void alternateSort(int *a, int *b, int n){
         b[t]=a[i];
         t++;
         b[t]=a[j];
+        t++;
+        i++;
+        j--;
+    }
+    if (n % 2 != 0)
+        b[t]=a[i];
+}
+
+void reversealtsort(int *a, int *b, int n){
+    int i=0;
+    int j=n-1;
+    int t=0;
+    sortarray(a,n);
+    while(i<j){
+        b[t]=a[j];
+        t++;
+        b[t]=a[i];
         t++;
         i++;
         j--;
@@ -42,8 +59,8 @@ int main(){
             std::cin >> a[i];
         for(int i=0;i<m;i++)
             std::cin >> b[i];
-        alternateSort(a,a1,n);
-        alternateSort(b,b1,m);
+        alternatesort(a,a1,n);
+        reversealtsort(b,b1,m);
         for(int i=0;i<n;i++)
             std::cout << a1[i] << " ";
         std::cout << std::endl;
@@ -51,8 +68,8 @@ int main(){
             std::cout << b1[i] << " ";
         std::cout << std::endl;
         for (int i=0;i<n;i++){
-            sum=sum+b[m-1-i]-a[i];
-            std::cout << i << b[m-1-i] << a[i]<< std::endl;
+            sum=sum+std::abs(b[i]-a[i]);
+            //std::cout << i << b[m-1-i] << a[i]<< std::endl;
         }
         std::cout << std::endl;
         std::cout << sum << std::endl;
