@@ -68,8 +68,8 @@ int main(){
             std::cout << b1[i] << " ";
         std::cout << std::endl;
         for (int i=0;i<n;i++){
-            sum=sum+std::abs(b[i]-a[i]);
-            std::cout << i <<" "<< b[i]<<" " << a[i]<< std::endl;
+            sum=sum+std::abs(b1[i]-a1[i]);
+            std::cout << i <<" "<< b1[i]<<" " << a1[i]<< std::endl;
         }
         std::cout << std::endl;
         std::cout << sum << std::endl;
