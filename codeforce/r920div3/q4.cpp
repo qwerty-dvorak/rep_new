@@ -61,15 +61,9 @@ int main(){
             std::cin >> b[i];
         alternatesort(a,a1,n);
         reversealtsort(b,b1,m);
-        for(int i=0;i<n;i++)
-            std::cout << a1[i] << " ";
-        std::cout << std::endl;
-        for(int i=0;i<m;i++)
-            std::cout << b1[i] << " ";
         std::cout << std::endl;
         for (int i=0;i<n;i++){
             sum=sum+std::abs(b1[i]-a1[i]);
-            std::cout << i <<" "<< b1[i]<<" " << a1[i]<< std::endl;
         }
         std::cout << std::endl;
         std::cout << sum << std::endl;
