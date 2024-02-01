@@ -14,8 +14,10 @@ int main(){
             std:: cin >> num;
             arr[0]=arr[1];
             arr[1]=num;
-            if (a*(arr[1]-arr[0])<b){
+            if ((arr[1]-arr[0])<b){
+                if (a*(arr[1]-arr[0])<b){
                 f=f-a*(arr[1]-arr[0]);
+                }
             }
             else{
                 f=f-b;
