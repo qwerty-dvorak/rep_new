@@ -27,6 +27,10 @@ int main(){
             std::cin >> b[i];
         sortarray(a,n);
         sortarray(b,m);
+        for(int i=0;i<n;i++)
+            std::cout << a[i] << " ";
+        for(int i=0;i<m;i++)
+            std::cout << b[i] << " ";
         for (int i=0;i<n;i++)
             sum=sum+b[m-1-i]-a[i];
         std::cout << sum << std::endl;
