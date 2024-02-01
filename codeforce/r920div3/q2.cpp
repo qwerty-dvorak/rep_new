@@ -15,7 +15,7 @@ int main(){
             std:: cin >> arr2[i];
         }
         int a1=0,a2=0;
-        int sum;
+        int sum=0;
         for (int i = 0; i < num; i++)
         {
             if (arr1[i]>arr2[i]){
@@ -44,7 +44,6 @@ int main(){
         else{
             std:: cout << sum*(-1) << std:: endl;
         }
-        n--;
-        
+        n--;    
     }
 }
