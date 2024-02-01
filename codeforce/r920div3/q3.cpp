@@ -1,9 +1,9 @@
 #include <iostream>
 
 int main(){
-    int n;
-    std:: cin >> n;
-    while(n!=0){
+    int k;
+    std:: cin >> k;
+    while(k!=0){
         long long int n,f,a,b;
         long long int c; 
         int t=0;
@@ -31,7 +31,7 @@ int main(){
         else{
             std:: cout << "YES" << std:: endl;
         }
-        n--;
+        k--;
     }
     return 0;
 }
