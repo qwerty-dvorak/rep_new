@@ -44,6 +44,7 @@ int main(){
         else{
             std:: cout << sum*(-1) << std:: endl;
         }
+        n--;
         
     }
 }
