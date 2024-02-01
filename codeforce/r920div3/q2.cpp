@@ -9,10 +9,12 @@ int main(){
         int arr1[num];
         int arr2[num];
         std::string s1;
+        std::cin >> s1;
         for (int i=0;i<num;i++){
             arr1[i]=s1[i]-'0';
         }
         std::string s2;
+        std::cin >> s2;
         for(int i=0;i<num;i++){
             arr2[i]=s2[i]-'0';
         }
