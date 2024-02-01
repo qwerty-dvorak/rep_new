@@ -12,6 +12,23 @@ void sortarray(int *a, int n){
     }
 }
 
+void alternateSort(int *a, int *b, int n){
+    int i=0;
+    int j=n-1;
+    int t=0;
+    sortarray(a,n);
+    while(i<j){
+        b[t]=a[i];
+        t++;
+        b[t]=a[j];
+        t++;
+        i++;
+        j--;
+    }
+    if (n % 2 != 0)
+        b[t]=a[i];
+}
+
 int main(){
     int k;
     std::cin >> k;
@@ -19,19 +36,19 @@ int main(){
         int n,m;
         int sum=0;
         std::cin >> n >> m;
-        int a[n];
-        int b[m];
+        int a[n],a1[n];
+        int b[m],b1[m];
         for(int i=0;i<n;i++)
             std::cin >> a[i];
         for(int i=0;i<m;i++)
             std::cin >> b[i];
-        sortarray(a,n);
-        sortarray(b,m);
+        alternateSort(a,a1,n);
+        alternateSort(b,b1,m);
         for(int i=0;i<n;i++)
-            std::cout << a[i] << " ";
+            std::cout << a1[i] << " ";
         std::cout << std::endl;
         for(int i=0;i<m;i++)
-            std::cout << b[i] << " ";
+            std::cout << b1[i] << " ";
         std::cout << std::endl;
         for (int i=0;i<n;i++){
             sum=sum+b[m-1-i]-a[i];
