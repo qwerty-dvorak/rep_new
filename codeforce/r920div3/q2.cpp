@@ -14,14 +14,28 @@ int main(){
         for (int i=0;i<num;i++){
             std:: cin >> arr2[i];
         }
-        int sum=0;
+        int a1=0,a2=0;
+        int sum;
         for (int i = 0; i < num; i++)
         {
             if (arr1[i]>arr2[i]){
-                sum++;
+                a1=1;
+                if (a2==0){
+                    sum++;
+                }
+                else{
+                    a2=0;
+                }
+
             }
             else if (arr1[i]<arr2[i]){
-                sum--;
+                a2=1;
+                if (a1==0){
+                    sum++;
+                }
+                else{
+                    a1=0;
+                }
             }
         }
         if (sum>=0){
