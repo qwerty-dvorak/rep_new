@@ -20,7 +20,7 @@ int main(){
             else{
                 f=f-b;
             }
-            if (f<0){
+            if (f=<0){
                 t=1;
                 break;
             }
