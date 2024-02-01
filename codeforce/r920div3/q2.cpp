@@ -23,23 +23,22 @@ int main(){
         for (int i = 0; i < num; i++)
         {
             if (arr1[i]>arr2[i]){
-                
                 if (a2==0){
-                    a1=1;
+                    a1++;
                     sum++;
                 }
                 else{
-                    a2=0;
+                    a2--;
                 }
 
             }
             else if (arr1[i]<arr2[i]){ 
                 if (a1==0){
-                    a2=1;
+                    a2++;
                     sum++;
                 }
                 else{
-                    a1=0;
+                    a1--;
                 }
             }
         }
