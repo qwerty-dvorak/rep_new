@@ -3,4 +3,4 @@ def cf(x,n):
         return 0
     else:
         return 1/(x+cf(x,n-1))
-print(3+cf(3,2))
+print(2+cf(2,3))
