@@ -1,3 +1,21 @@
 #include <stdio.h>
 
-int main()
+int issubtring(char *s,char *t){
+    while(*s){
+        char *p = s,*q = t;
+        while(*p && *q && *p == *q){
+            p++;
+            q++;
+        }
+        if(!*q) return 1;
+        s++;
+    }
+    return 0;
+}
+
+int main(){
+    char s[50],t[50];
+    scanf("%s%s",s,t);
+    printf("%d\n",issubtring(s,t));
+    return 0;
+}
