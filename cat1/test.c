@@ -1,11 +1,15 @@
-#include <stdio.h> 
+#include <stdio.h>
 #include <string.h>
-int main() 
-{ 
-int size; 
-char str1[] = "welcome"; 
-char str2[] = "cg"; 
-size = strcspn(str1, str2); 
-printf("The unmatched characters before first matched character : %d\n", 
-size);
+
+int main() {
+    char s1[] = "Hello, world!";
+    char *s2 = ", ";
+    char *token = strtok(s1, s2);
+
+    while (token != NULL) {
+        printf("Token: %s\n", token);
+        token = strtok(NULL, s2);
+    }
+
+    return 0;
 }
