@@ -22,6 +22,5 @@ int main(){
     fgets(t,50,stdin);
     t[strcspn(t,"\n")]='\0';
     printf("%d\n",issubtring(s,t));
-    printf("%d\n",ifsubstr(s,t));
     return 0;
 }
