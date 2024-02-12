@@ -14,6 +14,14 @@ int issubtring(char *s,char *t){
     return 0;
 }
 
+int ifsubstr(char s,char t){
+    while(s && t && s == t){
+        s++;
+        t++;
+    }
+    return !t;
+}
+
 int main(){
     char s[50],t[50];
     fgets(s,50,stdin);
@@ -21,5 +29,6 @@ int main(){
     fgets(t,50,stdin);
     t[strcspn(t,"\n")]='\0';
     printf("%d\n",issubtring(s,t));
+    printf("%d\n",ifsubstr(s,t));
     return 0;
 }
