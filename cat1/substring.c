@@ -14,13 +14,6 @@ int issubtring(char *s,char *t){
     return 0;
 }
 
-int ifsubstr(char s,char t){
-    while(s && t && s == t){
-        s++;
-        t++;
-    }
-    return !t;
-}
 
 int main(){
     char s[50],t[50];
