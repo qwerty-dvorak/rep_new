@@ -16,7 +16,9 @@ int issubtring(char *s,char *t){
 int main(){
     char s[50],t[50];
     fgets(s,50,stdin);
+    printf("%s\n",s);
     fgets(t,50,stdin);
+    printf("%s\n",t);
     printf("%d\n",issubtring(s,t));
     scanf("%s%s",s,t);
     printf("%d\n",issubtring(s,t));
