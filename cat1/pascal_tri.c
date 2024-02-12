@@ -2,6 +2,9 @@
 
 int main(){
     int n;
+    int i=123;
+    printf("%.10d\n", i);  // Prints "      -123"
+
     scanf("%d",&n);
     int a[n][n];
     for(int i=0;i<n;i++){
