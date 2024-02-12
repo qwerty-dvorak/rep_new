@@ -2,8 +2,8 @@
 
 int main(){
     int n;
-    int i=123;
-    printf("%.10d\n", i);  // Prints "      -123"
+    int i=121233;
+    printf("%.3d\n", i);  // Prints "      -123"
 
     scanf("%d",&n);
     int a[n][n];
