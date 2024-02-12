@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int issubtring(char *s,char *t){
     while(*s){
