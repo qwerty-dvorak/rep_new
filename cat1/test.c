@@ -8,6 +8,6 @@ int main() {
 
     printf("You entered: ");
     puts(str);  // Write the string
-
+    puts("This is a test");
     return 0;
 }
