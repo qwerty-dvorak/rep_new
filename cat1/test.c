@@ -1,13 +1,10 @@
-#include <stdio.h>
-
-int main() {
-    char str[100];
-
-    printf("Enter a string: ");
-    fgets(str, sizeof(str), stdin);  // Read a string
-
-    printf("You entered: ");
-    puts(str);  // Write the string
-    puts("This is a test");
-    return 0;
-}
+#include <stdio.h> 
+ 
+ int main() {
+    int i,j,k; 
+    for(i=0,j=0,k=0;i<4,k<8,j<10;i++){
+        printf("%d %d %d\n",i,j,k); 
+        j+=2; 
+        k+=3; 
+    } 
+ }
