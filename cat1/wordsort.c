@@ -13,7 +13,20 @@ void sortWords(char *words[], int count) {
         }
     }
 }
+void printWordFrequencies(char *words[], int count) {
+    int freq = 1;
 
+    for (int i = 1; i < count; i++) {
+        if (strcmp(words[i], words[i - 1]) == 0) {
+            freq++;
+        } else {
+            printf("%s: %d\n", words[i - 1], freq);
+            freq = 1;
+        }
+    }
+
+    printf("%s: %d\n", words[count - 1], freq);
+}
 int main() {
     char sentence[] = "This is a test sentence";
     char *delimiter = " ";
@@ -38,6 +51,8 @@ int main() {
     for (int i = 0; i < count; i++) {
         printf("%s ", words[i]);
     }
+    int count = sizeof(words) / sizeof(words[0]);
+    printWordFrequencies(words, count);
 
     return 0;
 }
