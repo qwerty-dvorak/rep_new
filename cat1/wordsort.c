@@ -15,29 +15,13 @@ void sortWords(char *words[], int count) {
 }
 
 int main() {
-    char sentence[] = "This is a test sentence";
-    char *delimiter = " ";
-    char *token;
-    char *words[50];  // Array to hold pointers to words
-    int count = 0;
-
-    // Get the first token
-    token = strtok(sentence, delimiter);
-
-    // Walk through other tokens
-    while (token != NULL) {
-        words[count] = token;
-        count++;
-        token = strtok(NULL, delimiter);
-    }
-
-    // Sort the words
-    sortWords(words, count);
-
-    // Print the sorted words
-    for (int i = 0; i < count; i++) {
-        printf("%s ", words[i]);
-    }
+    int a[5]={1,2,3,4,5};
+    int i,j,k=1,m;
+    i=++a[i];
+    j=a[1]++;
+    m=a[i++];
+    printf("%d %d %d %d\n",i,j,k,m);
+    printf("%d",a[1])
 
     return 0;
 }
