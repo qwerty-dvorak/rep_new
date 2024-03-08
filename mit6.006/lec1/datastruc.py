@@ -46,6 +46,7 @@ class Linked_List_Node:
 class Linked_List:
     def __init__(self):
         self.head = None
+        self.tail = None
         self.size = 0
     def _len_(self):
         return self.size
@@ -60,7 +61,7 @@ class Linked_List:
         self.head = self.head.next
         self.size -= 1
         return t
-    def insert(self, i, x):
+    def insert_at(self, i, x):
         if i == 0:
             self.insert_first(x)
             return
@@ -70,3 +71,35 @@ class Linked_List:
         new_node.next = prev_node.next
         prev_node.next = new_node
         self.size += 1
+    def delete_at(self, i):
+        if i == 0: return self.delete_first()
+        assert self.head
+        prev_node = self.head.later_node(i - 1)
+        t = prev_node.next.item
+        prev_node.next = prev_node.next.next
+        self.size -= 1
+        return t
+    def insert_last(self, x):
+        new_node = Linked_List_Node(x)
+        if not self.head:
+            self.head = new_node
+        else:
+            self.tail.next = new_node
+        self.tail = new_node
+        self.size += 1
+    def delete_last(self):
+        if not self.head: raise IndexError
+        if not self.head.next:
+            t = self.head.item
+            self.head = None
+            self.size -= 1
+            return t
+        prev_node = self.head.later_node(self.size - 2)
+        t = prev_node.next.item
+        prev_node.next = None
+        self.tail = prev_node
+        self.size -= 1
+        return t
+
+class Dynamisc_Array:
+    
