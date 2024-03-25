@@ -2,6 +2,16 @@
 
 using namespace std;
 
+void print_transpose(int mat[3][3]) {
+    cout << "The transpose of the matrix is: " << endl;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << mat[j][i] << " ";
+        }
+        cout << endl;
+    }
+}
+
 int main() {
     int n;
     cout << "Enter the size of the matrix: ";
